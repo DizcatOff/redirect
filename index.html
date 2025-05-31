@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Conditional Redirect</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const ref = document.referrer;
-      let isAllowed = false;
-
-      if (ref) {
-        try {
-          const refUrl = new URL(ref);
-          if (refUrl.hostname === "loot-link.com" || refUrl.hostname.endsWith(".loot-link.com")) {
-            isAllowed = true;
-          }
-        } catch (e) {
-          isAllowed = false;
-        }
-      }
-
-      if (isAllowed) {
-        window.location.replace("https://www.ghostbin.cloud/cyzh3/raw");
-      } else {
-        document.body.innerHTML =
-          "<h2>Access Denied</h2>" +
-          "<p>Do not bypass.</p>";
-      }
-    });
-  </script>
-  <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 2rem; }
-  </style>
+  <meta http-equiv="refresh" content="0;url=https://www.ghostbin.cloud/cyzh3/raw">
+  <title>Loading</title>
 </head>
 <body>
-  <p>Checking access…</p>
+ 
 </body>
 </html>
