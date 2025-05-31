@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=https://www.ghostbin.cloud/9vhgk/raw">
-  <title> </title>
+  <meta charset="UTF-8" />
+  <title>Conditional Redirect</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const allowedReferrer = "https://loot-link.com/s?xG5er9ZD";
+      if (document.referrer === allowedReferrer) {
+        window.location.replace("https://www.ghostbin.cloud/cyzh3/raw");
+      } else {
+        document.body.innerHTML = 
+          "<h2>Access Denied</h2>" +
+          "<p>Do not bypass.</p>";
+      }
+    });
+  </script>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 2rem; }
+  </style>
 </head>
 <body>
- 
+  <p>Checking access…</p>
 </body>
 </html>
