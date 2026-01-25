@@ -1,4 +1,1 @@
-  <h3 align="center">SUPRA METHOD</h3>
-
-  <p align="center">
-Geforce Now    <br />
+S-1-5-21-1692763592-1899156043-1273073858-1001 - denizege - 1m
